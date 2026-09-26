@@ -28,14 +28,29 @@
             align-items: center;
             margin: 0px;
         }
+
+        button {
+            padding: 0px;
+            border: none;
+            background-color: white;
+        }
     </style>
 </head>
 <body>
     <div class="gallery">
         <div class="card">
             <img src="images/index.png" style="width: 45%">
-            <img src="images/begin.png" style="width: 45%">
+            <button onclick = "begin(event)">
+                <img src="images/begin.png" style="width: 45%">
+            </button>
+            
         </div>
     </div>
 </body>
+<script>
+    function begin(event){
+        event.preventDefault();
+        window.location.href = "scorer.htm";
+    }
+</script>
 </html>
