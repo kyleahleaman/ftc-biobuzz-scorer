@@ -1,4 +1,4 @@
-<!-- <html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 <body>
     <h1>Red Alliance</h1>
 </body>
-</html> -->
+</html>
 
 <!-- 
     SCORE CALCULATOR:
@@ -21,91 +21,3 @@
             Nectar/Pollen in hive: +2 each
             Nectar/Pollen in garden: +1 each
 -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Counter</title>
-    <style>
-        /* CSS: Centers the counter on the screen and styles the elements */
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f9;
-            margin: 0;
-        }
-        .counter-container {
-            text-align: center;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        #counter-value {
-            font-size: 4rem;
-            font-weight: bold;
-            margin: 20px 0;
-            color: #333;
-        }
-        button {
-            font-size: 1.2rem;
-            padding: 10px 20px;
-            margin: 5px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: #007bff;
-            color: white;
-            transition: background 0.2s;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- HTML: The structure of your counter -->
-    <div class="counter-container">
-        <h2>My Counter</h2>
-        <div id="counter-value">0</div>
-        <button id="decrease-btn">Decrease</button>
-        <button id="reset-btn">Reset</button>
-        <button id="increase-btn">Increase</button>
-    </div>
-
-    <!-- JavaScript: The logic that changes the number -->
-    <script>
-        // 1. Create a variable to track the count value
-        let count = 0;
-
-        // 2. Target the HTML elements using their IDs
-        const counterValue = document.getElementById('counter-value');
-        const decreaseBtn = document.getElementById('decrease-btn');
-        const resetBtn = document.getElementById('reset-btn');
-        const increaseBtn = document.getElementById('increase-btn');
-
-        // 3. Add click events to the buttons
-        increaseBtn.addEventListener('click', () => {
-            count++;
-            counterValue.textContent = count;
-        });
-
-        decreaseBtn.addEventListener('click', () => {
-            count--;
-            counterValue.textContent = count;
-        });
-
-        resetBtn.addEventListener('click', () => {
-            count = 0;
-            counterValue.textContent = count;
-        });
-    </script>
-
-</body>
-</html>
