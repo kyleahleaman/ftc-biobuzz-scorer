@@ -3,46 +3,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <style>
-        ul {
-            list-style-type: none;
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
             margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #ebeaa0;
+            font-family: Arial, sans-serif;
         }
 
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: #2a2b2e;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        li a:hover {
-            background-color: rgb(236, 193, 199);
-        }
-
-        .w3-top,.w3-bottom{
-            z-index:1;overflow: hidden;left:0;}.w3-top{top:0}.w3-bottom{bottom:0}
-
-        ul.footer{
+        .container {
             display: flex;
             width: 100%;
-            justify-content: space-between;
+            height: 100vh;
         }
 
+        .red-alliance, .blue-alliance {
+            width: 50%;
+            padding: 20px;
+            overflow-y: auto;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .red-alliance {
+            margin-left: 15px;
+            margin-right: 15px;
+            background-color: #ffdddd;
+        }
+
+        .blue-alliance {
+            margin-right: 15px;
+            background-color: #ddddff;
+        }
     </style>
 </head>
 <body>
-    <h1>...</h1>
-    <footer>
+    <h1>Hello, World!</h1>
+    <div class="container">
+        <div class="red-alliance">
+        <h1>RED ALLIANCE</h1>
+        <p>Red alliance scoring goes here.</p>
+        </div>
+
+        <div class="blue-alliance">
+        <h1>BLUE ALLIANCE</h1>
+        <p>Blue alliance scoring goes here.</p>
+        </div>
+    </div>
+    <!-- <footer>
         <nav>
             <div class='w3-bottom'>
                 <ul class="footer">
@@ -53,7 +63,7 @@
                 </ul>
             </div>
         </nav>
-    </footer>
+    </footer> -->
 </body>
 </html>
 
